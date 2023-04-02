@@ -94,9 +94,9 @@ frame_1.grid(row=0, column=0, pady=20, padx=20)
 label_1 = customtkinter.CTkLabel(master=frame_1, justify=customtkinter.LEFT, text="Ask chatGPT anyting", font=("Helvetica",20))
 label_1.grid(row=0, column=0, pady=20, padx=20)
 
-userinput = customtkinter.CTkTextbox(master=frame_1, width=900, height=300, font=("Helvetica", 20))
-userinput.grid(row=0, column=0, columnspan=4, pady=20, padx=10)
-userinput.insert("0.0", "Write your what you want from chatGPT here")
+userinput = customtkinter.CTkTextbox(master=frame_1, width=980, height=300, font=("Helvetica", 20))
+userinput.grid(row=0, column=0, columnspan=4, pady=10, padx=10)
+userinput.insert("0.0", "Write your request to gpt4")
 
 
 rolSel = customtkinter.CTkOptionMenu(frame_1, font=("Helvetica", 20), values=["Assistance | ChatGPT Assistance", "Paul Dirac | Famous Mathematical physicist","Rob | comics explained"])

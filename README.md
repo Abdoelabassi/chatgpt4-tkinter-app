@@ -20,7 +20,7 @@ python -m pip install -r requirements.txt
 export your openai API key
 
 ```
-export OPNAI_API_KEY=sk-yourKeytoken
+export OPENAI_API_KEY=sk-yourKeytoken
 
 ```
 then run the app

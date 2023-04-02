@@ -119,7 +119,7 @@ exitButton.grid(row=4, column=3, pady=10, padx=10)
 
 getchatgptout = customtkinter.CTkTextbox(master=frame_1, font=("Helvetica", 20), width=980, height=500)
 getchatgptout.grid(row=5, column=0, columnspan=4, pady=20, padx=20)
-getchatgptout.insert("0.0", "Chatgpt answer")
+getchatgptout.insert("0.0", "gpt4 answer")
 
 
 

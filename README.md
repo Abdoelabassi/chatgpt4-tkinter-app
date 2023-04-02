@@ -2,7 +2,7 @@
 Connect to gpt4 from your local computer
 ## Using virtual env
 ```
-python -m virtual chagpt4env
+python -m virtualenv chagpt4env
 ```
 then install the required packages in requirements.txt
 

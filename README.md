@@ -16,5 +16,11 @@ export your openai API key
 export OPNAI_API_KEY=sk-yourKeytoken
 
 ```
-## For more infos visit openao API docs
+then run the app
+
+```
+python -m chatgpt.py
+
+```
+## For more infos visit openai API docs
 <a href="https://platform.openai.com/docs/introduction">OPENAI_DOCS</a>

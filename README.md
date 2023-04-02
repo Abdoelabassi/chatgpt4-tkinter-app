@@ -4,6 +4,13 @@ Connect to gpt4 from your local computer
 ```
 python -m virtualenv chagpt4env
 ```
+Activate the environment
+
+```
+source chatgptenv/bin/activate
+
+```
+
 then install the required packages in requirements.txt
 
 ```

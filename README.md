@@ -29,5 +29,8 @@ then run the app
 python -m chatgpt.py
 
 ```
+
+Feel free to git pull, and suggest more customized, and additional features
+
 ## For more infos visit openai API docs
 <a href="https://platform.openai.com/docs/introduction">OPENAI_DOCS</a>

@@ -68,15 +68,22 @@ def onSubmit():
         getchatgptout.insert("0.0", chat_history)
         userinput.delete("0.0", "end")
 
+    return chat_history
+
 
 def onReset():
-    pass
+    userinput.delete("0.0", "end")
+    getchatgptout.delete("0.0","end")
 
 
 def onExit():
     app.destroy()
 
-
+def onSave():
+    global chat_history
+    chat_history = onSubmit()
+    with open("chatgptreply.txt", "w") as f:
+        f.write(chat_history)
 
 
 
@@ -104,12 +111,20 @@ subButton.grid(row=4, column=0, pady=10, padx=10)
 resetButton = customtkinter.CTkButton(master=frame_1, command=onReset, text="Reset", font=("Helvetica", 20))
 resetButton.grid(row=4, column=1, pady=10, padx=10)
 
+saveTofilebtn = customtkinter.CTkButton(master=frame_1, command=onSave, text="Save", font=("Helvetica", 20))
+saveTofilebtn.grid(row=4, column=2, pady=10, padx=10)
+
 exitButton = customtkinter.CTkButton(master=frame_1, command=onExit, text="Exit", font=("Helvetica",20))
-exitButton.grid(row=4, column=2, pady=10, padx=10)
+exitButton.grid(row=4, column=3, pady=10, padx=10)
 
 getchatgptout = customtkinter.CTkTextbox(master=frame_1, font=("Helvetica", 20), width=980, height=500)
 getchatgptout.grid(row=5, column=0, columnspan=4, pady=20, padx=20)
 getchatgptout.insert("0.0", "Chatgpt answer")
+
+
+
+
+
 
 def main():
     app.mainloop()
